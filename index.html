@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="section1">
+    <section id="home">
+        <div class="video-container">
+        <video id="myVideo" autoplay loop muted>
+            <source src="content/header2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+        <script>
+            // Get the video element
+            var video = document.getElementById('myVideo');
+        
+            // Prevent pausing by overriding the pause function
+            video.onpause = function() {
+                video.play();
+            };
+        </script>
+    </section>
+</div>
+
+<div class="section2">
+    <section id="about">
+        <div class="video-container2">
+                <video id="myVideo2" autoplay loop muted width="640" height="360" >
+                    <source src="content/About_Me_3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+                <script>
+                    // Get the video element
+                    var video = document.getElementById('myVideo2');
+                
+                    // Prevent pausing by overriding the pause function
+                    video.onpause = function() {
+                        video.play();
+                    };
+                </script>
+        <p>My name is Gillian and I am a recent graduate of New York University. I studied Integrated Design and Media at the Tandon School of Engineering and Game Design at the Tisch School of the Arts. I previously worked as a web design intern and helped develop Phillipsburg’s District website, in terms of creating assets and organizing the site. I also interned at the startup Co-Uspace in Sydney, Australia, where I helped wireframe an application to be partnered with their product, the smart desk. I am currently employed at the NYU IDM Equipment Room, where I work with a variety of technical equipment including cameras, lighting, VR headsets, etc. Additionally, I have experience with the coding languages, C#, Python, and JavaScript, and software including Maya, Unity, and Unreal. With this knowledge, I was able to create games including Jurassic Bird, Coffee Rush, and Mushroom World.</p>
+    </section>
+</div>
+
+<div class="section3">
+    <section id="projects">
+        <div class="video-container3">
+        <video id="myVideo2" autoplay loop muted width="640" height="360" >
+            <source src="content/projects.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+        <script>
+            // Get the video element
+            var video = document.getElementById('myVideo2');
+        
+            // Prevent pausing by overriding the pause function
+            video.onpause = function() {
+                video.play();
+            };
+        </script>
+    <div class="media-container">
+        <!-- Video 1: Games -->
+        <a href="https://example.com/games" target="_blank">
+            <video src="content/fun_house_game.mp4" autoplay muted loop></video>
+            <div class="overlay-text">Games</div> <!-- Text overlay -->
+        </a>
+        <!-- Video 2: Animations -->
+        <a href="https://example.com/animations" target="_blank">
+            <video src="content/fun_house_game.mp4" autoplay muted loop></video>
+            <div class="overlay-text">3D Models and Animations</div> <!-- Text overlay -->
+        </a>
+        <!-- Video 3: Graphic Design -->
+        <a href="https://example.com/graphicdesign" target="_blank">
+            <video src="content/fun_house_game.mp4" autoplay muted loop></video>
+            <div class="overlay-text">Graphic Design</div> <!-- Text overlay -->
+        </a>
+        <!-- Video 4: Videos -->
+        <a href="https://example.com/videos" target="_blank">
+            <video src="content/fun_house_game.mp4" autoplay muted loop></video>
+            <div class="overlay-text">Videos</div> <!-- Text overlay -->
+        </a>
+    </div>
+
+        <!-- Add more projects as needed -->
+    </section>
+</div>
+
+<div class="section4">
+    <section id="contact">
+        <div class="video-container4">
+        <video id="myVideo2" autoplay loop muted width="640" height="360" >
+            <source src="content/Contact_Me_Portfolio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+        <script>
+            // Get the video element
+            var video = document.getElementById('myVideo2');
+        
+            // Prevent pausing by overriding the pause function
+            video.onpause = function() {
+                video.play();
+            };
+        </script>
+        <h2>Contact</h2>
+        <p>You can reach me at gvb9858@nyu.edu.</p>
+    </section>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Gillian Bayne. All rights reserved.</p>
+    </footer>
+</body>
+</html>
