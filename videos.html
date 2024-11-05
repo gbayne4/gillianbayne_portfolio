@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <nav>
+        <ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="3danimations.html">3D Models & Animations</a></li>
+                <li><a href="graphicdesign.html">Graphic Design</a></li>
+            </ul>
+        </ul>
+    </nav>
+</header>
+
+<script src="script.js"></script>
+<!-- Gallery -->
+<div class="gallery-grid">
+ <!-- Example gallery items -->
+ <div class="gallery-item">
+     <img src="content/BayneG_1221_Render.jpg" alt="Image 1" class="gallery-thumbnail" onclick="openModal('content/BayneG_1221_Render.jpg', 'This is image 1')">
+ </div>
+ <div class="gallery-item">
+     <video class="gallery-thumbnail" onclick="openModal('content/Contact Me Portfolio_2.mp4', 'This is video 1')">
+         <source src="content/Contact Me Portfolio_2.mp4" type="video/mp4">
+     </video>
+ </div>
+ <div class="gallery-item">
+     <img src="content/about-me.png" alt="Image 2" class="gallery-thumbnail" onclick="openModal('content/about-me.png', 'This is image 2')">
+ </div>
+ <div class="gallery-item">
+     <video class="gallery-thumbnail" onclick="openModal('content/BayneG_1102_Turntable.mov', 'This is video 2')">
+         <source src="content/BayneG_1102_Turntable.mov" type="video/mp4">
+     </video>
+ </div>
+ <!-- Add more gallery items as needed -->
+</div>
+
+<!-- Modal (Hidden by default) -->
+<div id="modal" class="modal">
+ <span class="close" onclick="closeModal()">&times;</span>
+ <div class="modal-content">
+     <!-- Placeholder for the clicked image or video -->
+     <div id="media-content"></div>
+     <!-- Text box below the image/video -->
+     <p id="media-text"></p>
+ </div>
+</div>
