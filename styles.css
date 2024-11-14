@@ -42,6 +42,26 @@ nav ul li a:hover {
     color: #000; /* Optional: Keep the color same or change */
 }
 
+@media (max-width: 1024px) {
+    .about-me-text, .about-me-image {
+        width: 100%; /* Stack text and image vertically */
+        margin: 0; /* Remove any large margins */
+    }
+}
+
+@media (max-width: 768px) {
+    .media-container a {
+        width: 100%; /* Full width for each video */
+        height: auto; /* Adjust height */
+    }
+
+    /* About me image adjustments */
+    .about-me-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 /* settings for each videos */
 video {
     
@@ -66,6 +86,18 @@ video {
 /* INTRO END*/
 
 /*ABOUT ME */
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        text-align: center;
+    }
+    .about-me-text, .about-me-image {
+        width: 100%; /* Make text and image fill full width */
+        margin: 0;
+    }
+}
+
 .section2
 {
     background:  #e5b1a0;
@@ -96,8 +128,8 @@ video {
 }
 
 img {
-    max-width: 80%;
-    min-width: 80%;
+    max-width: 100%; /* Makes the image take up the full width of its container */
+    height: auto; /* Maintains the aspect ratio */
 }
 /*ABOUT ME END */
 
