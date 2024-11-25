@@ -42,48 +42,43 @@ nav ul li a:hover {
     color: #000; /* Optional: Keep the color same or change */
 }
 
-@media (max-width: 1024px) {
-    .about-me-text, .about-me-image {
-        width: 100%; /* Stack text and image vertically */
-        margin: 0; /* Remove any large margins */
-    }
-}
 
-@media (max-width: 768px) {
-    .media-container a {
-        width: 100%; /* Full width for each video */
-        height: auto; /* Adjust height */
-    }
 
-    /* About me image adjustments */
-    .about-me-image img {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-/* settings for each videos */
+/* Settings for the video */
 video {
-    
-    width: 100;  /* Make the video stretch across the full width */
-    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
-    max-width: 1300px; 
+    width: 100%;        /* Stretch the video to fill the container's width */
+    height: auto;       /* Maintain aspect ratio */
+    max-width: 1300px;  /* Optional: limit the maximum width */
 }
 
-/* INTRO */
-.section1
-{
-    background:   #FFDCC9;
+/* Intro Section */
+.section1 {
+    background: #FFDCC9;
 }
-/* for header with my name */
-.video-container { 
+
+.video-container {
     display: grid;
-    place-items: center;  /* Center both horizontally and vertically */
-    height: 40vh;        /* Full height of the viewport */
-    margin-bottom: 450px;
+    place-items: center;  /* Center the video both horizontally and vertically */
+    height: auto;         /* Let the container height adjust dynamically */
+    margin-bottom: 50px;  /* Adjust the margin to your design */
+}
+
+#home {
+    height: auto;         /* Let the section height adjust to fit content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .video-container {
+        height: auto;     /* Make sure height adjusts for smaller screens */
+        margin-bottom: 20px; /* Optional: reduce bottom margin on smaller screens */
+    }
 }
 
 /* INTRO END*/
+
+
+
 
 /*ABOUT ME */
 
@@ -130,6 +125,26 @@ video {
 img {
     max-width: 100%; /* Makes the image take up the full width of its container */
     height: auto; /* Maintains the aspect ratio */
+}
+
+@media (max-width: 1024px) {
+    .about-me-text, .about-me-image {
+        width: 100%; /* Stack text and image vertically */
+        margin: 0; /* Remove any large margins */
+    }
+}
+
+@media (max-width: 768px) {
+    .media-container a {
+        width: 100%; /* Full width for each video */
+        height: auto; /* Adjust height */
+    }
+
+    /* About me image adjustments */
+    .about-me-image img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 /*ABOUT ME END */
 
