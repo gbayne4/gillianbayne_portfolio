@@ -98,28 +98,45 @@ video {
     background:  #e5b1a0;
 }
 /* about me */
+
 .video-container2 {
-    display: grid;
-   /* place-items: center;  /* Center both horizontally and vertically */
-    height: 10vh;        /* Full height of the viewport */
-    margin-left: 50px; 
+    display: grid; /* Ensure the video container behaves as a block */
+    width: 100%; /* Take the full width available */
+    margin-bottom: -300px; /* Add space between video and the "About Me" section */
+}
+
+@media (max-width: 768px) {
+    .video-container2 {
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+}
+
+.video-container2 video {
+    width: 100%; /* Ensure the video scales to the width of the container */
+    max-width: 640px; /* Optional: Limit the max width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .about-me {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px; /* Add some space above the about-me container if needed */
 }
+
 
 .about-me-text {
-    width: 50%; /* Adjust as needed */
-    margin-left: 200px; 
+    width: 100%; /* Ensure the text takes up the full width */
+    max-width: 800px; /* Optional: Limit the text width for readability */
+    text-align: center; /* Center-align text */
+    margin: 0 auto; /* Center the text block */
 }
 
+
 .about-me-image {
-    width: 40%; /* Adjust as needed */
+    width: 30%; /* Adjust as needed */
     text-align: right;
-    margin-right: 200px; 
+    margin-right: 50px; 
 }
 
 img {
@@ -178,6 +195,7 @@ img {
 .section4
 {
     background: #D95842;
+
    /* #ca5143 change to this if i end up using the video */
 }
 
