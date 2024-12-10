@@ -9,6 +9,7 @@
 <header>
     <nav>
         <ul>
+            <!-- might add a title here  <li class="nav-title">Graphic Design and Art</li>-->
             <li><a href="index.html">Home</a></li>
             <li><a href="games.html">Games</a></li>
             <li><a href="3danimations.html">3D Models & Animations</a></li>
@@ -17,27 +18,65 @@
     </nav>
 </header>
 <script src="script.js"></script>
+
+
 <!-- Gallery -->
 <div class="gallery-grid">
- <!-- Example gallery items -->
- <div class="gallery-item">
-     <img src="content/BayneG_1221_Render.jpg" alt="Image 1" class="gallery-thumbnail" onclick="openModal('content/BayneG_1221_Render.jpg', 'This is image 1')">
- </div>
- <div class="gallery-item">
-     <video class="gallery-thumbnail" onclick="openModal('content/Contact Me Portfolio_2.mp4', 'This is video 1')">
-         <source src="content/Contact Me Portfolio_2.mp4" type="video/mp4">
-     </video>
- </div>
- <div class="gallery-item">
-     <img src="content/about-me.png" alt="Image 2" class="gallery-thumbnail" onclick="openModal('content/about-me.png', 'This is image 2')">
- </div>
- <div class="gallery-item">
-     <video class="gallery-thumbnail" onclick="openModal('content/BayneG_1102_Turntable.mov', 'This is video 2')">
-         <source src="content/BayneG_1102_Turntable.mov" type="video/mp4">
-     </video>
- </div>
- <!-- Add more gallery items as needed -->
+    <div class="gallery-item">
+        <img class="gallery-thumbnail" 
+             src="content/graphic/pucker_final.png" 
+             alt="Pucker"
+             onclick="openModal('content/graphic/pucker_vid.mp4', 
+                                '<p>Potential logo for a makeup company, Pucker, and its progression.</p><p>Program Used: Adobe Illustrator', 
+                                'Pucker Logo')">
+    </div>
+    <div class="gallery-item">
+        <img class="gallery-thumbnail" 
+             src="content/graphic/couspace.png" 
+             alt="Smart Desk"
+             onclick="openCoUspaceModal()">
+    </div>
+    <div class="gallery-item">
+        <img class="gallery-thumbnail" 
+             src="content/graphic/fairlore.png" 
+             alt="Fairlore"
+             onclick="openModal('content/graphic/fairlore.mp4', 
+                                '<p>Potential menu design for a restaurant, Fairlore, and its progression.</p><p>Program Used: Adobe InDesign, Adobe Illustrator, Adobe Photoshop', 
+                                'Fairlore Menu')">
+    </div>
+    <div class="gallery-item">
+        <img src="content/graphic/beer.png" alt="Beer Logo" class="gallery-thumbnail" 
+             onclick="openModal('content/graphic/beer.png', 
+                                'The logo was made for my family’s Bayne Family Brewing Company.<p>Programs Used: Procreate',
+                                'Cheers!')">
+    </div>
+    <div class="gallery-item">
+        <img src="content/graphic/pumpkin.png" alt="Pumpkin Bride" class="gallery-thumbnail" 
+             onclick="openModal('content/graphic/pumpkin.png', 
+                                'Programs Used: Procreate', 
+                                'Pumpkin Bride')">
+    </div>
+    <div class="gallery-item">
+        <img src="content/graphic/strawberry.png" alt="Strawberry Banana" class="gallery-thumbnail" 
+             onclick="openModal('content/graphic/strawberry.png', 
+                                '<p>Programs Used: Procreate', 
+                                'Strawberry Banana')">
+    </div>
 </div>
+
+<script>
+    function openCoUspaceModal() {
+        openModal(
+            'content/graphic/couspace_app.mp4', 
+            `<p>This prototype was made to support Co-Uspace’s existing Smart Desk. The people who interact with the Smart Desk are the employees. My group and I aimed to create an app that would easily integrate the Smart Desk into employees’ everyday work lives. The application is meant to not feel tedious and be a positive user experience.</p>
+             <p>Program Used: Adobe Illustrator, Maya Procreate, Figma</p>
+             <p><a href="https://www.figma.com/proto/GaQg6WMDFa6tMqopcy9boe/APP?page-id=0%3A1&amp;type=design&amp;node-id=3-4&amp;viewport=46%2C327%2C0.16&amp;scaling=scale-down&amp;starting-point-node-id=3%3A4" target="_blank">Try the prototype!</a></p>`, 
+            'CoUspace App Design'
+        );
+    }
+</script>
+
+    
 
 <!-- Modal (Hidden by default) -->
 <div id="modal" class="modal">

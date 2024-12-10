@@ -100,14 +100,16 @@ video {
 /* about me */
 
 .video-container2 {
+    background: #e5b1a0; /* Ensure the video container matches the section background */
+   
     display: grid; /* Ensure the video container behaves as a block */
     width: 100%; /* Take the full width available */
     margin-bottom: -300px; /* Add space between video and the "About Me" section */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .video-container2 {
-        margin-bottom: 20px; /* Adjust margin for smaller screens */
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
     }
 }
 
@@ -151,7 +153,7 @@ img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) { /*768px */
     .media-container a {
         width: 100%; /* Full width for each video */
         height: auto; /* Adjust height */
@@ -165,6 +167,9 @@ img {
 }
 /*ABOUT ME END */
 
+
+
+/*Section 3 projects*/
 .section3
 {
     background: #e28269;
@@ -189,6 +194,7 @@ img {
     bottom: -2px;          /* Adjust the top position to crop */
     margin-top: -10px;
 }
+/*Section 3 projects*/
 
 
   /* contact me !!!! */
@@ -401,4 +407,15 @@ footer {
     color: white;
     font-size: 30px;
     cursor: pointer;
+}
+
+.nav-title {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: -50px;
+    color: #333; /* Adjust color as needed */
+    list-style: none; /* Remove default list style */
+    pointer-events: none; /* Make it non-clickable */
+    text-transform: uppercase; /* Optional: Makes it all caps */
 }
