@@ -1,4 +1,5 @@
-﻿/* Reset some default browser styles */
+﻿
+/* Reset some default browser styles */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -51,9 +52,13 @@ video {
     max-width: 1300px;  /* Optional: limit the maximum width */
 }
 
-/* Intro Section */
+/* Intro Section FFDCC9 */
 .section1 {
     background: #FFDCC9;
+}
+
+.section1.mac {
+    background: #ffe1cf;
 }
 
 .video-container {
@@ -97,7 +102,17 @@ video {
 {
     background:  #e5b1a0;
 }
-/* about me */
+
+.section2.mac
+{
+    background:  #f0bca9;
+}
+
+.section2.linux
+{
+    background:  #e5b1a0;
+}
+/* about me e5b1a0 */
 
 .video-container2 {
     background: #e5b1a0; /* Ensure the video container matches the section background */
@@ -107,7 +122,7 @@ video {
     margin-bottom: -300px; /* Add space between video and the "About Me" section */
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .video-container2 {
         margin-bottom: 10px; /* Adjust margin for smaller screens */
     }
@@ -146,7 +161,7 @@ img {
     height: auto; /* Maintains the aspect ratio */
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1500px) {
     .about-me-text, .about-me-image {
         width: 100%; /* Stack text and image vertically */
         margin: 0; /* Remove any large margins */
@@ -170,9 +185,16 @@ img {
 
 
 /*Section 3 projects*/
+
+
 .section3
 {
     background: #e28269;
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+   
 }
 /* projects */
 .video-container3 {
@@ -207,8 +229,11 @@ img {
 
 .contact
 { 
+    color: black;
+    margin-top: 20px;
+    padding-top: 10px;
     margin-left: 20px; /* Adjust the value to shift further right */
-    padding-left: 10px; /* Optional: Add padding for extra spacing */
+    padding-left: 10px; 
 }
 .icons {
     display: flex;

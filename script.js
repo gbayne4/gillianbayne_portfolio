@@ -31,3 +31,21 @@ function openCoUspaceModal2() {
         'CoUspace App Design'
     );
 }
+
+// Function to detect the operating system
+function detectOS() {
+    const platform = navigator.platform.toLowerCase();
+
+    if (platform.includes('mac')) {
+        document.body.classList.add('mac');
+    } else if (platform.includes('win')) {
+        document.body.classList.add('windows');
+    } else if (platform.includes('linux')) {
+        document.body.classList.add('linux');
+    } else {
+        document.body.classList.add('unknown'); // Fallback for unknown OS
+    }
+}
+
+// Call the function on page load
+detectOS();
