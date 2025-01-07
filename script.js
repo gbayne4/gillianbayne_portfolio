@@ -21,3 +21,13 @@ function closeModal() {
     modal.style.display = 'none';
     document.getElementById('media-content').innerHTML = ''; // Clear content
 }
+
+function openCoUspaceModal2() {
+    openModal(
+        'content/graphic/couspace_app.mp4', 
+        `<p>This prototype was made to support Co-Uspace’s existing Smart Desk. The people who interact with the Smart Desk are the employees. My group and I aimed to create an app that would easily integrate the Smart Desk into employees’ everyday work lives. The application is meant to not feel tedious and be a positive user experience.</p>
+         <p>Program Used: Adobe Illustrator, Maya Procreate, Figma</p>
+         <p><a href="https://www.figma.com/proto/GaQg6WMDFa6tMqopcy9boe/APP?page-id=0%3A1&amp;type=design&amp;node-id=3-4&amp;viewport=46%2C327%2C0.16&amp;scaling=scale-down&amp;starting-point-node-id=3%3A4" target="_blank">Try the prototype!</a></p>`, 
+        'CoUspace App Design'
+    );
+}

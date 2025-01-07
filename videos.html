@@ -22,24 +22,41 @@
 <script src="script.js"></script>
 <!-- Gallery -->
 <div class="gallery-grid">
- <!-- Example gallery items -->
- <div class="gallery-item">
-     <img src="content/BayneG_1221_Render.jpg" alt="Image 1" class="gallery-thumbnail" onclick="openModal('content/BayneG_1221_Render.jpg', 'This is image 1')">
- </div>
- <div class="gallery-item">
-     <video class="gallery-thumbnail" onclick="openModal('content/Contact Me Portfolio_2.mp4', 'This is video 1')">
-         <source src="content/Contact Me Portfolio_2.mp4" type="video/mp4">
-     </video>
- </div>
- <div class="gallery-item">
-     <img src="content/about-me.png" alt="Image 2" class="gallery-thumbnail" onclick="openModal('content/about-me.png', 'This is image 2')">
- </div>
- <div class="gallery-item">
-     <video class="gallery-thumbnail" onclick="openModal('content/BayneG_1102_Turntable.mov', 'This is video 2')">
-         <source src="content/BayneG_1102_Turntable.mov" type="video/mp4">
-     </video>
- </div>
- <!-- Add more gallery items as needed -->
+    <!-- Gallery item 1 -->
+    <div class="gallery-item">
+        <video class="gallery-thumbnail" autoplay muted loop  
+               onclick="openModal('content/videos/roses.mp4', '<p>Programs Used: Premiere.', 'Short Film – Love as Red as a Rose')">
+            <source src="content/videos/roses.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <!-- Gallery item 2 -->
+    <div class="gallery-item">
+        <video class="gallery-thumbnail" autoplay muted loop 
+               onclick="openModal('content/videos/pretty_bird.mp4', '<p>Programs Used: Premiere.', 'Still Image Film – The Pretty Bird')">
+            <source src="content/videos/pretty_bird.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Gallery item 3 -->
+    <div class="gallery-item">
+        <video class="gallery-thumbnail" autoplay muted loop 
+               onclick="openModal('content/videos/montage.mp4', '<p>Programs Used: Premiere.', 'A Present Dream')">
+            <source src="content/videos/montage.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <!-- Gallery item 4 
+    <div class="gallery-item">
+        <iframe class="gallery-thumbnail"
+                src="https://www.youtube.com/watch?v=hEQDyqHHbfw"
+                allow="autoplay; encrypted-media"
+                onclick="openModal('https://www.youtube.com/watch?v=hEQDyqHHbfw', '<p>Programs Used: Premiere.', 'Video Essay – Sexual Assault on College Campuses')"
+                frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+    -->
 </div>
 
 <!-- Modal (Hidden by default) -->

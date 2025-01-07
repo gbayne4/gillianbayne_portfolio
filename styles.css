@@ -205,22 +205,26 @@ img {
    /* #ca5143 change to this if i end up using the video */
 }
 
-.video-container4 {
-    display: grid;
-   /* place-items: center;  /* Center both horizontally and vertically */
-    height: 20vh;        /* Full height of the viewport */
-    margin-bottom: 5px;
+.contact
+{ 
+    margin-left: 20px; /* Adjust the value to shift further right */
+    padding-left: 10px; /* Optional: Add padding for extra spacing */
 }
-
 .icons {
     display: flex;
-    gap: 20px;
-  }
-  .icons img {
-    width: 50px; /* Adjust width and height as needed */
+    gap: 15px; /* Spacing between icons */
+}
+
+.icons img {
+    width: 40px; /* Ensure icons are uniform */
     height: auto;
-    cursor: pointer;
-  }
+    transition: transform 0.2s ease; /* Optional: Hover effect */
+}
+
+.icons img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
 
   /* contact me !!!! */
 
@@ -316,55 +320,6 @@ footer {
 /* !!!!!!!! hover over abilities */
 
 
-
-
-
-
-
-/* attempt at a gallary */
-
-/* General reset */
-/* General reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-/* Gallery grid */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Default to 4 columns */
-    grid-gap: 0px; /* Spacing between items */
-    padding: 20px;
-}
-
-/* Adjust number of columns on medium screens (e.g., tablets) */
-@media (max-width: 1024px) {
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
-    }
-}
-
-/* Adjust number of columns on small screens (e.g., phones) */
-@media (max-width: 600px) {
-    .gallery-grid {
-        grid-template-columns: 1fr; /* 1 column on small screens */
-    }
-}
-
-/* Gallery item styling */
-.gallery-item {
-    width: 100%;
-    cursor: pointer;
-}
-
-.gallery-thumbnail {
-    width: 100%;
-    height: auto;
-    max-height: 250px; /* Adjust thumbnail height */
-    object-fit: cover;
-}
-
 /* Modal styling */
 .modal {
     display: none; /* Hidden by default */
@@ -408,14 +363,59 @@ footer {
     font-size: 30px;
     cursor: pointer;
 }
-
+/* If i end up using a title */
 .nav-title {
     text-align: left;
     font-size: 1.5em;
     font-weight: bold;
-    margin: -50px;
+    margin: 0 5px;
     color: #333; /* Adjust color as needed */
     list-style: none; /* Remove default list style */
-    pointer-events: none; /* Make it non-clickable */
-    text-transform: uppercase; /* Optional: Makes it all caps */
+    pointer-events: none; /* Make it non-clickable */ }
+
+
+
+
+    /*SECOND GALLERY */
+/* SECOND GALLERY */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 3 columns */
+    gap: 30px; /* Space between items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin: 20px auto; /* Center the gallery within the page */
 }
+
+.gallery-item {
+    width: 100%; /* Make items responsive */
+    max-width: 400px; /* Set a maximum width for the images */
+}
+
+.gallery-thumbnail {
+    width: 100%; /* Images will stretch to fit their container */
+    height: auto; /* Preserve aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    transition: transform 0.3s ease; /* Optional: Add hover effect */
+}
+
+.gallery-thumbnail:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+/* Adjust number of columns on medium screens (e.g., tablets) */
+@media (max-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+/* Adjust number of columns on small screens (e.g., phones) */
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
+
