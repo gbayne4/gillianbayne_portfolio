@@ -230,10 +230,11 @@ img {
 .contact
 { 
     color: black;
-    margin-top: 20px;
+   /* margin-top: 20px; */
     padding-top: 10px;
     margin-left: 20px; /* Adjust the value to shift further right */
     padding-left: 10px; 
+    padding-bottom: 10px;
 }
 .icons {
     display: flex;
