@@ -85,41 +85,90 @@ video {
 
 
 
-/*ABOUT ME */
+/* ABOUT ME SECTION */
 
-@media (max-width: 768px) {
-    .about-me {
-        flex-direction: column; /* Stack vertically on smaller screens */
-        text-align: center;
-    }
+.about-me-heading {
+    font-family: 'Cormorant', serif;
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px; /* Added spacing for better separation */
+}
+
+/* ABOUT ME LAYOUT */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.about-me-text {
+    width: 100%;
+    max-width: 800px; /* Limit width for readability */
+    text-align: center;
+    margin: 0 auto; /* Center text block */
+    margin-bottom: 15px; /* Adds space between paragraphs */
+    line-height: 1.6; /* Improves readability */
+}
+
+.about-me-image {
+    width: 30%;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.about-me-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1500px) {
     .about-me-text, .about-me-image {
-        width: 100%; /* Make text and image fill full width */
+        width: 100%; /* Stack text and image vertically */
         margin: 0;
     }
 }
 
-.section2
-{
-    background:  #e5b1a0;
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-text, .about-me-image {
+        width: 100%;
+        margin: 0;
+    }
 }
 
-.section2.mac
-{
-    background:  #f0bca9;
+/* SECTION BACKGROUND COLORS */
+.section2 {
+    background: #e5b1a0;
 }
 
-.section2.linux
-{
-    background:  #e5b1a0;
+.section2.mac {
+    background: #f0bca9;
 }
-/* about me e5b1a0 */
 
+.section2.linux {
+    background: #e5b1a0;
+}
+
+/* VIDEO CONTAINER */
 .video-container2 {
-    background: #e5b1a0; /* Ensure the video container matches the section background */
-   
-    display: grid; /* Ensure the video container behaves as a block */
-    width: 100%; /* Take the full width available */
-    margin-bottom: -300px; /* Add space between video and the "About Me" section */
+    background: #e5b1a0; /* Match section background */
+    display: grid;
+    width: 100%;
+    margin-bottom: -300px; /* Space between video and About Me */
+}
+
+.video-container2 video {
+    width: 100%;
+    max-width: 640px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 @media (max-width: 1100px) {
@@ -128,59 +177,21 @@ video {
     }
 }
 
-.video-container2 video {
-    width: 100%; /* Ensure the video scales to the width of the container */
-    max-width: 640px; /* Optional: Limit the max width */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.about-me {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px; /* Add some space above the about-me container if needed */
-}
-
-
-.about-me-text {
-    width: 100%; /* Ensure the text takes up the full width */
-    max-width: 800px; /* Optional: Limit the text width for readability */
-    text-align: center; /* Center-align text */
-    margin: 0 auto; /* Center the text block */
-}
-
-
-.about-me-image {
-    width: 30%; /* Adjust as needed */
-    text-align: right;
-    margin-right: 50px; 
-}
-
-img {
-    max-width: 100%; /* Makes the image take up the full width of its container */
-    height: auto; /* Maintains the aspect ratio */
-}
-
-@media (max-width: 1500px) {
-    .about-me-text, .about-me-image {
-        width: 100%; /* Stack text and image vertically */
-        margin: 0; /* Remove any large margins */
-    }
-}
-
-@media (max-width: 1000px) { /*768px */
+/* MEDIA CONTAINER */
+@media (max-width: 1000px) {
     .media-container a {
-        width: 100%; /* Full width for each video */
-        height: auto; /* Adjust height */
+        width: 100%;
+        height: auto;
     }
 
-    /* About me image adjustments */
+    /* Adjust about me image */
     .about-me-image img {
         max-width: 100%;
         height: auto;
     }
 }
-/*ABOUT ME END */
+
+/* END OF ABOUT ME SECTION */
 
 
 
