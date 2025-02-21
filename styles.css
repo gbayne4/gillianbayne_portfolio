@@ -441,6 +441,13 @@ footer {
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
+.gallery-item iframe {
+    width: 100%; /* Ensure iframe fills its container */
+    height: 100%; /* Make height consistent with the width */
+    max-width: 400px; /* Match max-width to ensure uniformity */
+    max-height: 225px; /* Maintain a reasonable aspect ratio (16:9) */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
 
 /* Adjust number of columns on medium screens (e.g., tablets) */
 @media (max-width: 1024px) {
