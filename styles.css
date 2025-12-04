@@ -5,17 +5,52 @@ body, h1, h2, h3, p, ul {
     padding: 0;
 }
 
+body, p, ul{
+    font-family: 'body', sans-serif;
+    color:#1f1210;
+}
+
+h1, h2, h3 {
+    font-family: 'title', sans-serif;
+    color:#460c02;
+}
+
+h1{
+color:#460c02;
+}
+
+@font-face {
+    font-family: 'title';
+    src: url('fonts/title.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    
+}
+
+@font-face {
+    font-family: 'body';
+    src: url('fonts/body.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'name';
+    src: url('fonts/name.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* Set a basic font and background color */
 body {
     font-family: cambria, sans-serif;
     background-color: #F9E4D9;
-    color: #333;
+    color: #460c02;
 }
 
 /* Style the header and navigation */
 header {
     background: #D95842;
-    color: #000000;
     padding: 20px 0;
 }
 
@@ -31,7 +66,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000;
+    color:#1f1210;
     text-decoration: none;
     font-size: 16px;
     transition: transform 0.3s ease, text-shadow 0.3s ease;
@@ -39,8 +74,8 @@ nav ul li a {
 
 nav ul li a:hover {
     transform: scale(1.5); /* Makes the text grow slightly */
-    text-shadow: 0 0 10px rgba(230, 198, 151, 0.753), 0 0 rgba(230, 198, 151, 0.753), 0 0 30px rgba(230, 198, 151, 0.753); /* Glowing effect */
-    color: #000; /* Optional: Keep the color same or change */
+    text-shadow: 0 0 10px rgba(199, 22, 22, 0.753), 0 0 rgba(199, 22, 22, 0.753), 0 0 30px rgba(199, 22, 22, 0.753); /* Glowing effect */
+    color: #1f1210; /* Optional: Keep the color same or change */
 }
 
 
@@ -55,6 +90,24 @@ video {
 /* Intro Section FFDCC9 */
 .section1 {
     background: #FFDCC9;
+    display: flex;
+    flex-direction: column;     /* stack name above logo */
+    align-items: center;        /* center horizontally */
+    justify-content: center;    /* center vertically if section has height */
+    text-align: center;
+    padding: 20px;
+}
+
+.my-name {
+    font-family: 'name', sans-serif;
+    font-size: 6rem;            /* make the name bigger */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.logo img {
+    width: 200px;               /* make the logo smaller */
+    height: auto;
 }
 
 .section1.mac {
@@ -88,9 +141,7 @@ video {
 /* ABOUT ME SECTION */
 
 .about-me-heading {
-    font-family: 'Cormorant', serif;
     font-size: 60px;
-    color: black;
     text-align: center;
     font-weight: bold;
     margin-bottom: 20px; /* Added spacing for better separation */
@@ -114,7 +165,7 @@ video {
 }
 
 .about-me-image {
-    width: 25%;
+    width: 20%;
     text-align: right;
     margin-right: 200px;
 }
@@ -201,10 +252,8 @@ video {
 .section3
 {
     background: #e28269;
-    font-family: 'Cormorant', serif;
     text-align: center;
     font-size: 40px;
-    color: black;
    
 }
 /* projects */
@@ -231,22 +280,22 @@ video {
 
 
   /* contact me !!!! */
-.section4
-{
+  .section4 {
     background: #D95842;
-
-   /* #ca5143 change to this if i end up using the video */
 }
 
-.contact
-{ 
-    color: black;
-   /* margin-top: 20px; */
+.contact {
     padding-top: 10px;
-    margin-left: 20px; /* Adjust the value to shift further right */
-    padding-left: 10px; 
-    padding-bottom: 10px;
+    margin-left: 20px;
+    padding-left: 20px; 
+    padding-bottom: 20px;
 }
+
+.section4 .contact p {
+    color: #1c7436; /* Your chosen color */
+}
+
+
 .icons {
     display: flex;
     gap: 15px; /* Spacing between icons */
@@ -285,7 +334,6 @@ h1, h2, h3 {
 /* Style the footer */
 footer {
     background: #D95842;
-    color: #000000;
     text-align: center;
     padding: 10px 0;
 }
@@ -332,7 +380,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #e5b1a0;
     font-size: 24px;
     font-weight: bold;
     opacity: 0; /* Initially hidden */
@@ -406,12 +454,18 @@ footer {
     font-size: 1.5em;
     font-weight: bold;
     margin: 0 5px;
-    color: #333; /* Adjust color as needed */
+    color: #460c02; /* Adjust color as needed */
     list-style: none; /* Remove default list style */
     pointer-events: none; /* Make it non-clickable */ }
 
 
+/* Paragraph inside contact section */
 
+
+/* Footer text */
+footer p {
+    color: #1f1210; /* change to any color */
+}
 
     /*SECOND GALLERY */
 /* SECOND GALLERY */
